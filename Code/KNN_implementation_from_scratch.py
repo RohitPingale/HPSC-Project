@@ -3,6 +3,7 @@ import numpy as np
 from math import sqrt
 import time
 
+
 from sklearn.model_selection import train_test_split
 from sklearn.datasets import load_digits
 from sklearn.metrics import accuracy_score
@@ -34,9 +35,11 @@ class KNN:
         self.X_train = x_train
         self.Y_train = y_train
 
+    
     def euc_dist(self, x1, x2):
     	return np.sqrt(np.sum((x1-x2)**2))
-
+    	
+    
     def predict(self, X_test):
 	    predictions = [] 
 	    for i in range(len(X_test)):
