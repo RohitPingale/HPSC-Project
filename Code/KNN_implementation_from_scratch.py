@@ -24,7 +24,7 @@ X = digits.data
 y = digits.target
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=123)
-
+1
 
 
 class KNN:
@@ -50,7 +50,8 @@ class KNN:
 	            if self.Y_train[idx] in neigh_count:
 	                neigh_count[self.Y_train[idx]] += 1
 	            else:
-	                neigh_count[self.Y_train[idx]] = 1
+	                neigh_count[
+	                .Y_train[idx]] = 1
 	       
 	        sorted_neigh_count = sorted(neigh_count.items(), reverse=True)
 	        predictions.append(sorted_neigh_count[0][0]) 
